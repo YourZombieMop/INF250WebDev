@@ -1,0 +1,14 @@
+@media print {
+  html, body, header, footer, main, aside, h1, h2, h3, p {
+    background-color: whitesmoke;
+    color: darkslategray;
+  }
+  
+  img {
+    display: none;
+  }
+  
+  #featured-img {
+    display: none;
+  }
+}
