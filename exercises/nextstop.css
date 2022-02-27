@@ -1,0 +1,155 @@
+:root {
+  --cream: #fcf4eb;
+  --soft-beige: #e5e3c9;
+  --soft-green: #b4cfb0;
+  --soft-dark-green: #94b49f;
+  --soft-blue: #668f92;
+  --soft-dark-blue: #4b6d6e;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+	box-sizing: border-box;
+  padding: 0;
+  background-color: var(--soft-beige);
+  color: var(--soft-dark-blue);
+}
+
+header, footer {
+  flex-shrink: 0;
+  padding: 0;
+  background-color: var(--soft-dark-green);
+  color: var(--soft-beige);
+}
+
+footer p {
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav {
+  background-color: var(--cream);
+  text-align: center;
+}
+
+nav a {
+  display: inline-block;
+  margin: 8px 8px;;
+  padding: 3px 10px;
+  border-style: solid;
+  border-color: var(--soft-green);
+  border-width: 2px;
+  border-radius: 5px;
+  background-color: var(--soft-dark-green);
+  color: var(--cream);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+main {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+article {
+  padding: 0 24px;
+  background-color: var(--cream);
+  color: var(--soft-blue);
+}
+
+aside {
+  padding: 0 24px;
+  background-color: var(--soft-green);
+}
+
+h1 {
+  padding: 20px 32px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 1em;
+}
+
+h1 small {
+  padding: 0 0 0 0.5em;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 80%;
+}
+
+h2 {
+  padding: 12px 0 0 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+  margin: 0 10px;
+  padding: 16px 0;
+}
+
+figure {
+  padding: 4px 0;
+}
+
+figcaption {
+  font-style: italic;
+  font-size: 90%;
+}
+
+img {
+	max-width: calc(100% - 6px);
+	max-height: 100vh;
+  border-style: solid;
+  border-width: 3px;
+  border-color: var(--soft-blue);
+}
+
+#featured-img {
+  flex-shrink: 0;
+	height: 60vw;
+	max-height: 360px;
+  width: 100%;
+  background-color: var(--soft-dark-blue);
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@media screen and (min-width: 660px) {
+  article {
+    float: left;
+    height: 100%;
+    width: calc(50% - 48px);
+  }
+  aside {
+    float: right;
+    height: 100%;
+    width: calc(50% - 48px);
+  }
+  aside h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  main, #featured-img {
+    width: 70%;
+    min-width: 733px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  figure {
+    display: inline-block;
+    width: 49%;
+  }
+}
