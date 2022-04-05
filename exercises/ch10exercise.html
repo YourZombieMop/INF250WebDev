@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>Ch 10 Hands-On-Exercise 1</title>
+	<link rel="stylesheet" href="ch10exercise.css">
+</head>
+
+<body>
+	<header>
+		<p>
+			Header
+		</p>
+	</header>
+	<form>
+		<h1>Form Title</h1>
+		<input type="hidden" name="userID">
+		<label for="username">Username</label>
+		<input type="text" name="username" id="username" maxlength="30" required>
+		<label for="password">Password</label>
+		<input type="password" name="password" id="password" required>
+		<label for="media">Favorite Social Media Platform</label>
+		<select name="media" id="media" required>
+			<option value="" hidden disabled selected>Select...</option>
+			<option value="facebook">Facebook</option>
+			<option value="youtube">YouTube</option>
+			<option value="whatsapp">WhatsApp</option>
+			<option value="instagram">Instagram</option>
+			<option value="tiktok">TikTok</option>
+			<option value="twitter">Twitter</option>
+			<option value="reddit">Reddit</option>
+			<option value="linkedin">LinkedIn</option>
+		</select>
+		<fieldset>
+			<legend>Favorite Day of the Week</legend>
+			<label for="sunday" class="sub">
+				<input type="radio" name="day-of-week" id="sunday" value="sunday" required>
+				Sunday
+			</label>
+			<label for="monday" class="sub">
+				<input type="radio" name="day-of-week" id="monday" value="monday" required>
+				Monday
+			</label>
+			<label for="tuesday" class="sub">
+				<input type="radio" name="day-of-week" id="tuesday" value="tuesday" required>
+				Tuesday
+			</label>
+			<label for="wednesday" class="sub">
+				<input type="radio" name="day-of-week" id="wednesday" value="wednesday" required>
+				Wednesday
+			</label>
+			<label for="thursday" class="sub">
+				<input type="radio" name="day-of-week" id="thursday" value="thursday" required>
+				Thursday
+			</label>
+			<label for="friday" class="sub">
+				<input type="radio" name="day-of-week" id="friday" value="friday" required>
+				Friday
+			</label>
+			<label for="saturday" class="sub">
+				<input type="radio" name="day-of-week" id="saturday" value="saturday" required>
+				Saturday
+			</label>
+		</fieldset>
+		<fieldset>
+			<legend>Billing Address</legend>
+			<label for="addressLine1" class="sub">Address Line 1</label>
+			<input type="text" name="addressLine1" id="addressLine1" required>
+			<label for="addressLine2" class="sub">Address Line 2 (optional)</label>
+			<input type="text" name="addressLine2" id="addressLine2">
+			<label for="city" class="sub">City</label>
+			<input type="text" name="city" id="city" required>
+			<label for="state" class="sub">State</label>
+			<input type="text" name="state" id="state" required>
+			<label for="zip" class="sub">Zip/Postal Code</label>
+			<input type="text" name="zip" id="zip" required>
+		</fieldset>
+		<input type="submit" value="SUBMIT">
+	</form>
+	<footer>
+		<p>
+			&copy; 2022 Matthew Boyea
+		</p>
+	</footer>
+</body>
+
+</html>
