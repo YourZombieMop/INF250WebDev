@@ -1,0 +1,107 @@
+* {
+	margin: 0;
+}
+
+html, body {
+	min-height: 100vh;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+  background-color: #F403FB;
+  background-image: linear-gradient(45deg, #1CDDE4, #F403FB);
+	font-family: 'Roboto', Arial, sans-serif;
+	font-weight: 400;
+}
+
+header, footer {
+	width: calc(100% - 2 * 1.2em);
+  padding: 0.8em 1.2em;
+	box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.5);
+	background-color: #333333;
+	color: #FEFEFE;
+}
+
+header {
+	font-weight: 300;
+  font-size: 1.4rem;
+}
+
+footer {
+  text-align: center;
+	font-weight: 100;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 1;
+}
+
+form {
+  display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: left;
+  gap: 1em;
+	margin: 2em;
+	padding: 2.4em 1.6em;
+	border-radius: 1em;
+	background-color: #FEFEFE;
+	box-shadow: 0.2em 0.2em 1em rgba(0, 0, 0, 0.3);
+}
+
+form h1 {
+  text-align: center;
+}
+
+form section.columns {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 1em;
+}
+
+form section.columns * {
+  flex-grow: 1;
+}
+
+label {
+	display: block;
+	font-weight: 700;
+	font-size: 0.6rem;
+}
+
+input, textarea {
+	font-family: 'Roboto', Arial, sans-serif;
+	font-weight: 300;
+}
+
+input[type=text], input[type=password], input[type=email] {
+	width: calc(100% - 4px);
+	border-width: 0 0 1px 0;
+}
+
+textarea {
+  display: block;
+  resize: vertical;
+  width: calc(100% - 6px);
+  height: 10em;
+}
+
+input[type=submit] {
+	width: 100%;
+	margin: 0 auto;
+  margin-top: 0.8em;
+	padding: 0.6em 0;
+	border: none;
+	border-radius: 2em;
+	background-color: #1CDDE4;
+	background-image: linear-gradient(270deg, #1CDDE4, #F403FB);
+	color: #FEFEFE;
+}
