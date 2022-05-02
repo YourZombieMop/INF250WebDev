@@ -1,12 +1,12 @@
 :root {
-	--bg-white: #fffdfa;
-	--bg-gray: #70968d;
+	--primary: #a2d5df;
+	--secondary: #70968d;
+	--tertiary: #ffa435;
+	--bg-white: #fafcff;
+	--bg-gray: #1c1c1c;
 	--bg-black: #060b0c;
 	--text-white: #fffdfa;
 	--text-black: #0b1416;
-	--primary: #a2d5df;
-	--secondary: #ffd563;
-	--tertiary: #ffa435;
 }
 
 * {
@@ -14,7 +14,7 @@
 }
 
 body {
-	background-color: var(--primary);
+	background-color: var(--bg-gray);
 	color: var(--text-black);
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	text-align: center;
@@ -24,11 +24,14 @@ main {
 	background-color: var(--bg-white);
 	width: 80%;
 	margin: 0 auto;
+	box-shadow: 0 1rem 1rem black;
 }
 
 header, footer {
+	position: relative;
 	background-color: var(--bg-black);
 	color: var(--text-white);
+	box-shadow: 0 0 1rem black;
 }
 
 header {
@@ -85,9 +88,13 @@ footer p {
 	margin: 0;
 }
 
+.text-white {
+	color: var(--text-white);
+}
+
 .emphasis {
 	padding: 10px 0;
-	background-color: var(--bg-gray);
+	background-color: var(--secondary);
 	color: var(--text-black);
 }
 
@@ -138,13 +145,22 @@ h1 {
 }
 
 h2 {
-	margin: 4% 10%;
+	margin: 1em 3em;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+table {
+	margin: 0 auto;
+	padding: 1rem 4rem;
+}
+
+.form {
+	min-width: 85%;
 }
 
 form {
 	padding: 0 12%;
-	margin: 5% 0;
+	margin: 1.5em 0;
 }
 
 form label, form input {
@@ -159,8 +175,12 @@ form label {
 	text-shadow: 1px 1px 2px var(--text-black);
 }
 
-form input[type="text"], form input[type="email"] {
+textarea, form input[type="text"], form input[type="email"], form input[type="tel"] {
 	width: calc(100% - 9px);
+}
+
+textarea {
+	resize: none;
 }
 
 img {
@@ -226,7 +246,7 @@ div.background-img {
 		display: flex;
 		justify-content: space-around;
 		padding: 10px 0;
-		background-color: var(--bg-white);
+		background-color: var(--primary);
 	}
 
 	header nav a {

@@ -1,0 +1,28 @@
+@media print {
+  html, body, header, footer, main, aside, h1, h2, h3, p {
+    background-color: whitesmoke;
+    color: darkslategray;
+    box-shadow: none;
+  }
+
+  aside, .left, .right {
+    display: block;
+    width: 100%;
+  }
+  
+  img {
+    display: none;
+  }
+  
+  #featured-img {
+    display: none;
+  }
+
+  .background-img {
+    display: none;
+  }
+
+  form {
+    display: none;
+  }
+}
